@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment:fixed;/*
+
+            /*
+            
+            Shorthand - Background (declarar todos os backgrounds em uma única declaração.. e não background-color, background-size e etc
+
+                color > img > position > repeat > size* > attatchment
+
+                *size funciona na shorthand, mas tem que colocar uma barra normal depois da posição
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center/cover no-repeat fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
