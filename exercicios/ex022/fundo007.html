@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            position: relative;
+            height: 93vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: 
+            url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            /* Outro jeito de alinhar horizontal e verticalmente é usar:
+
+            display: flex;      Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo.
+
+            justify-content: center;     Alinhamento horizontal, ou seja, dispensa o "margin: auto".
+
+            align-items:     center; Alinhamento vertical
+            
+            Essas propriedades sempre são colocadas no elemento-pai (container), não se esqueçam desse importante detalhe.*/
+
+        }
+
+        #conteudo {
+            background-image: 
+            url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            /* Container ou Section (o que  contém o conteúdo - Article) relative e o conteúdo (Article) abolute para poder alinhar verticalmente */
+
+            position: absolute;
+
+            height: 200px;
+            width: 400px;
+            /* margin: auto; só serve pro alinhamento horizontal */
+            background-color: yellow;
+
+            
+            /* esse left e top colocam a referência da imagem exatamente no centro do container em que eles se encontram que, no caso, é o #container (section) [deve estar com position: absolute; (o conteúdo) e o container com position: relative;] */
+
+            left: 50%;
+            top:50%;
+
+            /* transform: translate(x, y) faz a mesma coisa que trasladar em cálculo */
+            /* Nesse caso, volta 50% de sua posição em x e em y */
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
