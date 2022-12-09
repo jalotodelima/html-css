@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.3m;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        /* 
+            tbody > tr:nth-child(odd) [odd = 2n-1]
+        
+            tbody > tr:nth-child(even) [even = 2n]
+
+         */
+
+        td.num {
+            text-align: right;
+        }
+
+        td.palavra {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia de tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--Scope é dizendo onde estão os dados relacionados a esse subtítulo.. como no casos são os nomes dos estados (que estão na mesma coluna de Estado), por isso o "col"-->
+                <th scope="col" style="width:50px;">População</th>
+                <!--Aqui é para a população, que também estão na mesma coluna do subtítulo população-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="palavra">São Paulo</td>
+                <td class="num">45.919.49</td>
+            </tr>
+            <tr>
+                <td class="palavra">Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td class="palavra">Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td class="palavra">Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td class="palavra">Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td class="palavra">Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td class="palavra">Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td class="palavra">Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--Aqui o dado referente ao subtítulo (total de habitantes está na mesma linha - row - do seu subtítulo, por isso scope="row")-->
+                <td class="num">210.147.125</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus ut enim nam quam quos ipsum molestias. Suscipit velit inventore eaque quae voluptatum consequuntur, quis veniam ullam facilis pariatur necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti possimus esse magni beatae voluptas doloremque nulla distinctio quibusdam id sapiente dolorem, ipsam consectetur inventore repellendus nostrum perferendis molestias incidunt hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eveniet rerum facere accusantium, natus, iste quidem quis voluptatem corrupti nihil, totam soluta similique maiores inventore. Cupiditate illum hic repudiandae ex?
+    </p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus ut enim nam quam quos ipsum molestias. Suscipit velit inventore eaque quae voluptatum consequuntur, quis veniam ullam facilis pariatur necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti possimus esse magni beatae voluptas doloremque nulla distinctio quibusdam id sapiente dolorem, ipsam consectetur inventore repellendus nostrum perferendis molestias incidunt hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eveniet rerum facere accusantium, natus, iste quidem quis voluptatem corrupti nihil, totam soluta similique maiores inventore. Cupiditate illum hic repudiandae ex?
+    </p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus ut enim nam quam quos ipsum molestias. Suscipit velit inventore eaque quae voluptatum consequuntur, quis veniam ullam facilis pariatur necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti possimus esse magni beatae voluptas doloremque nulla distinctio quibusdam id sapiente dolorem, ipsam consectetur inventore repellendus nostrum perferendis molestias incidunt hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eveniet rerum facere accusantium, natus, iste quidem quis voluptatem corrupti nihil, totam soluta similique maiores inventore. Cupiditate illum hic repudiandae ex?
+    </p>
+
+</body>
+</html>
