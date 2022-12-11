@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <!-- media ="all" as configurações servem para todos os dispositivos .. são em comum para screen e print, por exemplo -->
+
+    <!-- mídias types são escritas sem parênteses e mídias features são escritas em parênteses.. vamos ver como ficam logo abaixo -->
+
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape)">
+
+    <!-- O link para estilo retrato foi para screen (media type) e (and) orientation:portrait (media feature), que precisa estar escrito em parênteses.
+    Os 2 CSSs são para representar quando uma tela está em pé e a segunda quando está deitada;
+
+    O CSS style é para configurações comuns aos dispositivos em pé e deitados, por isso o media = "all"-->
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
