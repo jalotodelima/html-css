@@ -29,6 +29,7 @@ Depois, cria um id nesse span, estiliza.. e cria a junção com o JS para adicio
 
 body, html {
     background-color: darkgrey;
+    margin-bottom: 5px;
 }
 
 header {
